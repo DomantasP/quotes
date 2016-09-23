@@ -72,13 +72,14 @@ section .sec-container {
 	font-weight: 100;
 }
 .sec-four .sec-container {
-	max-width: 600px;
+	max-width: max-content;
 	text-align: center;
 	font-size: 25px;
 }
 .sec-four p{
 	font-size: 25px;
 }
+
 .sec-four img {
 	height: 43px;
 	width: 40px;
@@ -159,10 +160,9 @@ footer img {
 .blue-bg {
 	background: #0066FF;
 	text-align: right;
-	font-size: 15vw;
 }
 .blue-bg p {
-	font-size: 4vw;
+	font-size: 80px;
 	margin-right: 10px;
 }
 .white-bg p {
@@ -207,14 +207,11 @@ footer img {
 }
 
 .sec-ten {
-	background: #757F9A; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #757F9A , #D7DDE8); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #757F9A , #D7DDE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+	background: #C2B186;    
 }
 .sec-ten .sec-container {
 	max-width: 500px;
-	color: black;
+	color: #fff;
 }
 .sec-ten p {
 	font-size: 30px;
@@ -224,11 +221,72 @@ footer img {
 }
 .sec-ten span {
 	display: block;
-	border-bottom: thin solid black;
+	border-bottom: 1px solid #ffffff;
 	width: 90%;
 	margin: 0 auto;
 }
 .sec-ten .sec-container p:last-child {
 	text-align: center;
 	font-size: 18px !important;
+}
+
+.sec-eleven {
+	background: #232526; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.sec-eleven .sec-container {
+	max-width: 470px;
+	margin: 0 auto;
+}
+.sec-eleven p,span {
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 27px;
+	line-height: 85%;
+}
+.mid-size {
+	font-size: 50px;
+	letter-spacing: 0.55px;
+}
+.biger-size {
+	font-size: 132px;
+}
+.big-size {
+	font-size: 78px;
+}
+.sec-eleven .author {
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 23px !important;
+	line-height: 50px;
+}
+@media only screen and (min-device-width: 200px) and (max-device-width: 880px) {
+	.sec-seven .blue-bg p {
+		font-size: 30px;
+	}
+
+}
+@media only screen and (min-device-width: 200px) and (max-device-width: 450px){
+	.sec-eleven .sec-container{
+		max-width: 250px;
+	}
+	.sec-eleven p {
+		font-size: 17px;
+	}
+	.mid-size {
+		font-size: 24px;
+		padding-left: 2px;
+	}
+	.biger-size {
+	font-size: 66px;
+	}
+	.big-size{
+		font-size: 39px;
+		padding-left: 3px;
+	}
+	.sec-eleven .author {
+		letter-spacing: 3px;
+	}
 }
